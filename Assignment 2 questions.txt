@@ -1,0 +1,18 @@
+1. What considerations would have to be taken to add a columns class? What would be the advantage?
+	We would need another set of subscript operator overloads that return a columns class.
+	it would allow us to access a whole column at a time if we wanted.
+
+2. What is forward declaration and how is it used? Why does it work?
+	Forward Declaration is the declaration of an identifier without giving a definition yet. 
+	It lets other operations that use the identifier know it exists for use without needing a definition.
+
+3. What would the code look like to rotate a 2d array by 90 degrees. What would be the big-O notation for this operation?
+	int x=3;
+	int * original[x][x];
+	int * copy[x][x]; 
+	for (int i = 0; i < x; i++)
+		for (int m = 0; x < col; m++)
+			copy[i, m] = original[x - m - 1, i];
+	
+	this would be O(n^2).
+			
